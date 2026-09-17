@@ -1,0 +1,19 @@
+# Ambiente virtual Python
+venv/
+backend/venv/
+__pycache__/
+*.pyc
+
+# Banco de dados local (SQLite)
+*.db
+terreiro.db
+
+# Variáveis de ambiente sensíveis
+.env
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
