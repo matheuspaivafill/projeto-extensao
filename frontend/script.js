@@ -2,7 +2,7 @@
    CONFIGURAÇÃO DA API
    Em produção, troque pela URL do backend publicado no Render.
 --------------------------------------------------------- */
-const API_BASE_URL = "http://127.0.0.1:8000";
+const API_BASE_URL = "https://projeto-extensao-8ruo.onrender.com";
 
 /* ---------------------------------------------------------
    ESTADO EM MEMÓRIA (preenchido a partir da API)
@@ -470,11 +470,11 @@ function renderAdminEscala(){
     <p class="page-sub">${fmtDate(s.data)} • ${entidadeLabel(s.entidade)} — adicione quem estará disponível nesta gira.</p>
     ${items}
     <label class="field-label">Nome do médium</label>
-    <input type="text" id="novoMediumNome">
+    <input type="text" id="novoMediumNome" placeholder="Ex: Zé Pilintra">
     <label class="field-label">Nome da entidade (opcional)</label>
-    <input type="text" id="novoMediumEntidade">
+    <input type="text" id="novoMediumEntidade" placeholder="Ex: Tranca-Ruas, Sete Encruzilhadas...">
     <label class="field-label">Vagas</label>
-    <input type="text" id="novoMediumCap" inputmode="numeric">
+    <input type="text" id="novoMediumCap" placeholder="Ex: 4" inputmode="numeric">
     <button class="btn btn-primary" id="btnAddMedium">Adicionar à lista</button>
     <button class="btn btn-ghost" id="btnIrCheckin" style="margin-top:10px;">Ver check-in / fila desta gira</button>
   `;
